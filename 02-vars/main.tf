@@ -1,5 +1,5 @@
 variable "a" {
-  defaults = 100
+  default = 100
 }
 
 // variables block is having one reference, here is reference
