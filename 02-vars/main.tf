@@ -1,4 +1,4 @@
-variables "a" {
+variable "a" {
   defaults = 100
 }
 
