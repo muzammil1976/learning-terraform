@@ -33,3 +33,11 @@ resource "aws_instance" "web" {
     Name = "terraform"
   }
 }
+
+terraform {
+  backend "s3" {
+    bucket = "terraform-1976"
+    key    = "ex1/terraform.tfstate"
+    region = "us-east-1"
+  }
+}
