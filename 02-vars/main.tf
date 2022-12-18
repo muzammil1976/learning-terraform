@@ -15,3 +15,13 @@ output "x" {
 }
 
 // If you access variable with any combination of other strings then ${} is preffered
+
+variable "b" {}
+// this variable b is declared in tfvars file
+
+
+variable "c" {}
+// this variable from cli of terraform, terraform apply -auto-approve -var c=400
+
+variable "d" {}
+// this variable from SHELL, export TF_VAR_d=500
