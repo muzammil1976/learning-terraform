@@ -8,4 +8,6 @@ resource "aws_instance" "web" {
   }
 }
 
-vaiable "SGID" {}
+vaiable "SGID" {
+
+}
