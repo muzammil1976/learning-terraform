@@ -1,4 +1,4 @@
-variables "no-of-instaces" {
+variable "no-of-instaces" {
   default = 2
 }
 
