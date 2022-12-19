@@ -3,7 +3,7 @@ variable "no-of-instaces" {
 }
 
 resource "aws_instance" "web" {
-  count         = var.no-of-instances
+  count         = var.no-of-instaces
   ami           = "ami-070d3c2a310535689"
   instance_type = "t3.micro"
 
