@@ -9,7 +9,7 @@ resource "aws_instance" "web" {
 
 
   tags = {
-    Name = "terraform"
+    Name = "terraform-${count.index}"
   }
 }
 
