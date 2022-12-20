@@ -4,8 +4,10 @@ variable "alist" {
 
 variable "amap" {
   default = {
-    a = 1
-    b = 2
+    set1 = {
+      a = 2
+      b = 3
+    }
   }
 }
 
