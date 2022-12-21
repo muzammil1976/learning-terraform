@@ -16,7 +16,7 @@ resource "aws_instance" "web" {
     }
 
     inline = [
-      "uname"
+      "uname-a"
     ]
   }
 }
