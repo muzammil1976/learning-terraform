@@ -13,7 +13,7 @@ variable "instance_type" {
 }
 
 locals {
-  instance_tyoe = var.instance_type == null ? "t3.micro" : var.instance_type
+  instance_type = var.instance_type == null ? "t3.micro" : var.instance_type
 }
 
 data "aws_ami" "example" {
