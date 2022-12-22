@@ -1,6 +1,6 @@
 resource "aws_instance" "web" {
   // count = 0 ( we can make some condition to come with a value based on that this resource can be created)
-  ami           = data.aws_ami.exaple.image_id
+  ami           = data.aws_ami.example.image_id
   instance_type = local.instance_type
 
   tags = {
@@ -15,6 +15,7 @@ variable "instance_type" {
 locals {
   instance_tyoe = var.instance_type == null ? "t3.micro" : var.instance_type
 }
+
 data "aws_ami" "example" {
   executable_users = ["self"]
   most_recent      = true
